@@ -24,7 +24,7 @@ import torch
 import intervaltree as itree
 import sortedcontainers
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.getcwd()), "data")
 assert os.path.isdir(DATA_DIR)
 HG38_GTF = os.path.join(DATA_DIR, "Homo_sapiens.GRCh38.100.gtf.gz")
 assert os.path.isfile(HG38_GTF)
